@@ -16,7 +16,7 @@ const App = () => {
 
   console.log(npcs)
   return (
-   <>
+   <> 
     <Header />
     <Home />
     <SVIndex />
