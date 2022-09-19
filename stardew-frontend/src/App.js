@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import npcs from "./mockSV";
+import React, { useState } from "react";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import CatEdit from "./pages/SVEdit";
+import CatIndex from "./pages/SVIndex";
+import CatNew from "./pages/SVNew";
+import CatShow from "./pages/SVShow";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
 
-function App() {
+
+
+const App = () => {
+  const [npcs, setNpcs] = useState(mockSV) 
+
+  console.log(npcs)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+    <Header />
+    <Home />
+    <SVIndex />
+    <SVShow />
+    <SVNew />
+    <SVEdit />
+    <NotFound />
+    <Footer />
+
+    
+   </> 
   );
 }
 
