@@ -1,11 +1,11 @@
-import npcs from "./mockSV";
+import mockSV from "./mockSV";
 import React, { useState } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import CatEdit from "./pages/SVEdit";
-import CatIndex from "./pages/SVIndex";
-import CatNew from "./pages/SVNew";
-import CatShow from "./pages/SVShow";
+import SVEdit from "./pages/SVEdit";
+import SVIndex from "./pages/SVIndex";
+import SVNew from "./pages/SVNew";
+import SVShow from "./pages/SVShow";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import { Routes, Route } from "react-router-dom"
