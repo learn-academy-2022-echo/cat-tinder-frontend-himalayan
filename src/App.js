@@ -19,6 +19,7 @@ const App = () => {
   
   return (
    <> 
+   <div style={{ backgroundImage: "url(public/SVBackground.jpeg)" }}></div>
     <Header />
     <Routes>
     <Route path="/" element={<Home />} />
