@@ -21,10 +21,10 @@ const App = () => {
     <Header />
     <Routes>
     <Route path="/" element={<Home />} />
-      <Route path="/catindex" element={<SVIndex />} />
-      <Route path="/catshow" element={<SVShow />} />
-      <Route path="/catnew" element={<SVNew />} />
-      <Route path="/catedit" element={<SVEdit />} />
+      <Route path="/SVindex" element={<SVIndex />} />
+      <Route path="/SVshow" element={<SVShow />} />
+      <Route path="/SVnew" element={<SVNew />} />
+      <Route path="/SVedit" element={<SVEdit />} />
       <Route path="/*" element={<NotFound />} />
     </Routes>
     <Footer />
