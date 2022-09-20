@@ -8,6 +8,7 @@ import CatNew from "./pages/SVNew";
 import CatShow from "./pages/SVShow";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
+import { Routes, Route } from "react-router-dom"
 
 
 
@@ -18,12 +19,14 @@ const App = () => {
   return (
    <> 
     <Header />
-    <Home />
-    <SVIndex />
-    <SVShow />
-    <SVNew />
-    <SVEdit />
-    <NotFound />
+    <Routes>
+    <Route path="/" element={<Home />} />
+      <Route path="/catindex" element={<SVIndex />} />
+      <Route path="/catshow" element={<SVShow />} />
+      <Route path="/catnew" element={<SVNew />} />
+      <Route path="/catedit" element={<SVEdit />} />
+      <Route path="/*" element={<NotFound />} />
+    </Routes>
     <Footer />
 
     
