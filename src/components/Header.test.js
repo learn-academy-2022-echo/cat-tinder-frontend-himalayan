@@ -1,42 +1,25 @@
-import { render, screen } from "@testing-library/react"
-import { BrowserRouter } from "react-router-dom"
-import userEvent from "@testing-library/user-event"
-import Header from "./Header"
+import { screen, render } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
+import { BrowserRouter } from "react-router-dom";
+import Header from './Header'
 
-describe("<Header />", () => {
-  it("renders without crashing", () => {
-    const div = document.createElement("div")
-    render(
-      <BrowserRouter>
-        <Header />
-      </BrowserRouter>,
-      div
-    )
+
+describe("<Header/>", ()=>{
+  test("Header renders without error", ()=>{
+    render(<Header/>)
+    const indexLink = screen.getByText(/Index/i)
+    expect(indexLink).toBeInTheDocument()
   })
-  it("renders a logo with a src and alt", () => {
-    const div = document.createElement("div")
-    render(
-      <BrowserRouter>
-        <Header />
-      </BrowserRouter>,
-      div
-    )
-    const logo = screen.getByRole("img")
-    expect(logo).toHaveAttribute("src", "CHANGETHIS-logo.png")
-    expect(logo).toHaveAttribute("alt", "CHANGE THIS")
-  })
-  it("has clickable links", () => {
+  test("has clickable links", () => {
     render(
       <BrowserRouter>
         <Header />
       </BrowserRouter>
     )
-    userEvent.click(screen.getByText("CHANGE THIS Meet the Cats"))
-    expect(screen.getByText("CHANGE THIS Meet the Cats")).toBeInTheDocument()
-    userEvent.click(screen.getByText("CHANGE THIS Add a New Cat"))
-    expect(screen.getByText("CHANGE THIS Add a New Cat")).toBeInTheDocument()
-    userEvent.click(screen.getByText("CHANGE THIS Adopt a Cat!"))
-    expect(screen.getByText("CHANGE THIS Adopt a Cat!")).toBeInTheDocument()
+    userEvent.click(screen.getByText("Index"))
+    expect(screen.getByText("Index")).toBeInTheDocument()
+    userEvent.click(screen.getByText("New"))
+    expect(screen.getByText("New")).toBeInTheDocument()
+    
   })
 })
-

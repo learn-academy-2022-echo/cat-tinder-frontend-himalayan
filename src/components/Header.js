@@ -11,28 +11,28 @@ const Header = () => {
                 <NavItem>
                     <NavLink
                         active
-                        href="#"
+                        href="./Home"
                     >
                         Home
                     </NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="#">
+                    <NavLink href="/SVIndex">
                         Index
                     </NavLink>
                 </NavItem>
                 <NavItem>
                     <NavLink
-                        disabled
-                        href="#"
+                       
+                        href="/SVNew"
                     >
                         New
                     </NavLink>
                 </NavItem>
                 <NavItem>
                     <NavLink
-                        disabled
-                        href="#"
+                       
+                        href="/SVEdit"
                     >
                         Edit
                     </NavLink>

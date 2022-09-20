@@ -16,12 +16,13 @@ import { Routes, Route } from "react-router-dom"
 const App = () => {
   const [npcs, setNpcs] = useState(mockSV) 
 
-  console.log(npcs)
+  
   return (
    <> 
     <Header />
     <Routes>
     <Route path="/" element={<Home />} />
+    <Route path="/Home" element={<Home />} />
       <Route path="/SVindex" element={<SVIndex />} />
       <Route path="/SVshow" element={<SVShow />} />
       <Route path="/SVnew" element={<SVNew />} />
@@ -29,7 +30,7 @@ const App = () => {
       <Route path="/*" element={<NotFound />} />
     </Routes>
     <Footer />
-
+   
     
    </> 
   );
