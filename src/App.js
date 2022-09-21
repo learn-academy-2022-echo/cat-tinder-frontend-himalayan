@@ -9,6 +9,8 @@ import SVShow from "./pages/SVShow";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import { Routes, Route } from "react-router-dom"
+import './App.css'
+
 
 
 
@@ -24,7 +26,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Home" element={<Home />} />
-        <Route path="/SVindex" element={<SVIndex />} />
+        <Route path="/SVindex" element={<SVIndex npcs = {npcs}/>} />
         <Route path="/SVshow" element={<SVShow />} />
         <Route path="/SVnew" element={<SVNew />} />
         <Route path="/SVedit" element={<SVEdit />} />
