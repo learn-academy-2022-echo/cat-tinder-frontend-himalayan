@@ -26,6 +26,11 @@ const Header = () => {
                         Edit
                     </NavLink>
                 </NavItem>
+                <NavItem>
+                    <NavLink href="/SVShow">
+                        Show
+                    </NavLink>
+                </NavItem>           
             </Nav>
         </>
     )

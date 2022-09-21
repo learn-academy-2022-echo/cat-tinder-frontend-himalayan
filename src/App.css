@@ -7,3 +7,14 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+#show-profile{
+  height: 40%;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#npc-name{
+  text-align: center;
+}
