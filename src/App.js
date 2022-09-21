@@ -14,26 +14,26 @@ import { Routes, Route } from "react-router-dom"
 
 
 const App = () => {
-  const [npcs, setNpcs] = useState(mockSV) 
+  const [npcs, setNpcs] = useState(mockSV)
 
-  
+
   return (
-   <> 
-   <div style={{ backgroundImage: "url(public/SVBackground.jpeg)" }}></div>
-    <Header />
-    <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/Home" element={<Home />} />
-      <Route path="/SVindex" element={<SVIndex />} />
-      <Route path="/SVshow" element={<SVShow />} />
-      <Route path="/SVnew" element={<SVNew />} />
-      <Route path="/SVedit" element={<SVEdit />} />
-      <Route path="/*" element={<NotFound />} />
-    </Routes>
-    <Footer />
-   
-    
-   </> 
+    <>
+      <div style={{ backgroundImage: "url(public/SVBackground.jpeg)" }}></div>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/SVindex" element={<SVIndex />} />
+        <Route path="/SVshow" element={<SVShow />} />
+        <Route path="/SVnew" element={<SVNew />} />
+        <Route path="/SVedit" element={<SVEdit />} />
+        <Route path="/*" element={<NotFound />} />
+      </Routes>
+      <Footer />
+
+
+    </>
   );
 }
 

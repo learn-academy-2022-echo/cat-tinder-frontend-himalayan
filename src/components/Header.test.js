@@ -4,9 +4,9 @@ import { BrowserRouter } from "react-router-dom";
 import Header from './Header'
 
 
-describe("<Header/>", ()=>{
-  test("Header renders without error", ()=>{
-    render(<Header/>)
+describe("<Header/>", () => {
+  test("Header renders without error", () => {
+    render(<Header />)
     const indexLink = screen.getByText(/Index/i)
     expect(indexLink).toBeInTheDocument()
   })
@@ -20,6 +20,6 @@ describe("<Header/>", ()=>{
     expect(screen.getByText("Index")).toBeInTheDocument()
     userEvent.click(screen.getByText("New"))
     expect(screen.getByText("New")).toBeInTheDocument()
-    
+
   })
 })

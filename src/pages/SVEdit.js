@@ -1,9 +1,9 @@
 import React from "react"
 
 const SVEdit = () => {
-    return(
+    return (
         <>
-        <p>Edit</p>
+            <p>Edit</p>
         </>
     )
 }

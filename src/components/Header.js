@@ -5,14 +5,9 @@ import { Nav, NavItem, NavLink } from "reactstrap"
 const Header = () => {
     return (
         <>
-            <Nav
-                tabs
-            >
+            <Nav tabs>
                 <NavItem>
-                    <NavLink
-                        active
-                        href="./Home"
-                    >
+                    <NavLink active href="./Home">
                         Home
                     </NavLink>
                 </NavItem>
@@ -22,18 +17,12 @@ const Header = () => {
                     </NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink
-                       
-                        href="/SVNew"
-                    >
+                    <NavLink href="/SVNew">
                         New
                     </NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink
-                       
-                        href="/SVEdit"
-                    >
+                    <NavLink href="/SVEdit">
                         Edit
                     </NavLink>
                 </NavItem>
