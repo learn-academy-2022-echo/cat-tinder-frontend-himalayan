@@ -5,35 +5,24 @@ import { Nav, NavItem, NavLink } from "reactstrap"
 const Header = () => {
     return (
         <>
-            <Nav
-                tabs
-            >
+            <Nav tabs>
                 <NavItem>
-                    <NavLink
-                        active
-                        href="#"
-                    >
+                    <NavLink active href="./Home">
                         Home
                     </NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="#">
+                    <NavLink href="/SVIndex">
                         Index
                     </NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink
-                        disabled
-                        href="#"
-                    >
+                    <NavLink href="/SVNew">
                         New
                     </NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink
-                        disabled
-                        href="#"
-                    >
+                    <NavLink href="/SVEdit">
                         Edit
                     </NavLink>
                 </NavItem>
