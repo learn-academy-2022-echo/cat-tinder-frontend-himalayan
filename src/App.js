@@ -8,7 +8,7 @@ import SVNew from "./pages/SVNew";
 import SVShow from "./pages/SVShow";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, BrowserRouter } from "react-router-dom"
 import './App.css'
 
 
@@ -17,21 +17,24 @@ import './App.css'
 
 const App = () => {
   const [npcs, setNpcs] = useState(mockSV)
-
+  const createNpc = (npc) => {
+    console.log(npc)
+  }
 
   return (
     <>
       <div style={{ backgroundImage: "url(public/SVBackground.jpeg)" }}></div>
       <Header />
+      <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
         <Route path="/svindex" element={<SVIndex npcs = {npcs}/>} />
         <Route path="/svshow/:id" element={<SVShow npcs= { npcs } />} />
-        <Route path="/svnew" element={<SVNew />} />
+        <Route path="/svnew" element={<SVNew createNpc={createNpc} />} />
         <Route path="/svedit" element={<SVEdit />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
+      </BrowserRouter>
       <Footer />
 
 
