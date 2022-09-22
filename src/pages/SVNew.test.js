@@ -4,12 +4,15 @@ import { BrowserRouter } from "react-router-dom"
 import userEvent from '@testing-library/user-event'
 
 describe("<SVNew />", () => {
-    it("render without crashing", () => {
-        render(<SVNew />)
+    test("render without crashing", () => {
+        render(
+        <BrowserRouter>
+        <SVNew />
+        </BrowserRouter>)
         const showLink = screen.getByText(/Submit Npc/i)
         expect(showLink).toBeInTheDocument()
     })
-    // it("has working links", () => {
+    // test("has working links", () => {
     //     render(
     //         <BrowserRouter>
     //             <SVNew />

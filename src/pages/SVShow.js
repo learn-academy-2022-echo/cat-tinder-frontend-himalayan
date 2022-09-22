@@ -1,6 +1,6 @@
 import React from "react"
-import { useParams } from "react-router-dom"
-import { Card, CardBody, CardText, CardTitle } from 'reactstrap'
+import { Card, CardBody, CardText, CardTitle, Button } from 'reactstrap'
+import { useParams, NavLink } from "react-router-dom"
 
 
 
@@ -22,6 +22,7 @@ const SVShow = ({ npcs }) => {
             Favorite thing: {npcObj.likes}
           </CardText>
         </CardBody>
+        <Button><NavLink to={`/svedit/${npcObj.id}`} className="nav-link">Edit</NavLink></Button>
       </Card>
     </div>
   )
