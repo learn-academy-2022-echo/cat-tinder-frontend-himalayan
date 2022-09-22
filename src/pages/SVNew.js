@@ -1,6 +1,6 @@
 import { React, useState } from "react"
 import { Form, FormGroup, Input, Label, Button } from "reactstrap"
-import { BrowserRouter, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 
 const SVNew = ({ createNpc }) => {
@@ -22,7 +22,6 @@ const SVNew = ({ createNpc }) => {
     return (
         <>
         <div>
-            <BrowserRouter>
             <Form>
                 <FormGroup>
                     <Label for="name">Name</Label>
@@ -32,7 +31,6 @@ const SVNew = ({ createNpc }) => {
                     Submit Npc
                 </Button>
             </Form>
-            </BrowserRouter>
         </div>
         </>
     )
