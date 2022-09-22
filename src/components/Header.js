@@ -7,7 +7,7 @@ const Header = () => {
         <>
             <Nav tabs>
                 <NavItem>
-                    <NavLink active href="./Home">
+                    <NavLink active href="/">
                         Home
                     </NavLink>
                 </NavItem>
@@ -26,11 +26,7 @@ const Header = () => {
                         Edit
                     </NavLink>
                 </NavItem>
-                <NavItem>
-                    <NavLink href="/SVShow">
-                        Show
-                    </NavLink>
-                </NavItem>           
+                         
             </Nav>
         </>
     )
