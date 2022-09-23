@@ -1,5 +1,5 @@
-import mockSV from "./mockSV";
-import React, { useState } from "react";
+// import mockSV from "./mockSV";
+import React, { useState, useEffect } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import SVEdit from "./pages/SVEdit";
@@ -17,11 +17,25 @@ import PlaySound from "./components/PlaySound";
 
 
 
+
 const App = () => {
 
   // eslint-disable-next-line
-  const [npcs, setNpcs] = useState(mockSV);
+  const [npcs, setNpcs] = useState([]);
 
+  useEffect(() => {
+    readNpc()
+  }, [])
+
+  const readNpc = () => {
+    fetch("http://localhost:3000/npcs")
+    .then((response) => response.json())
+    .then((payload) => {
+      setNpcs(payload)
+    })
+    .catch((error) => console.log(error))
+  }
+  
   const createNpc = (npc) => {
   
   };
