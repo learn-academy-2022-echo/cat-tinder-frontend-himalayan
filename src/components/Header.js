@@ -1,20 +1,21 @@
 import React from "react";
 import { Nav, NavItem, NavLink } from "reactstrap";
+import {Link} from "react-router-dom"
 
 const Header = () => {
   return (
     <>
       <Nav tabs>
         <NavItem>
-          <NavLink href="/">
+          **<NavLink tag={Link} to="/">
             Home
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="/SVIndex">Index</NavLink>
+          **<NavLink tag={Link} to="/SVIndex">Index</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="/SVNew">New</NavLink>
+          **<NavLink tag={Link} to="/SVNew">New</NavLink>
         </NavItem>
       </Nav>
     </>
