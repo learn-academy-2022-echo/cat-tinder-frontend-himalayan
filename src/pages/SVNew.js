@@ -21,37 +21,37 @@ const SVNew = ({ createNpc }) => {
 
     return (
         <>
-        <div className="form-background-box">
-            <Form>
-                <FormGroup>
-                    <div className="form-label">
-                    <Label for="name">Name</Label>
+            <div className="form-background-box">
+                <Form>
+                    <FormGroup>
+                        <div className="form-label">
+                            <Label for="name" >Name</Label>
+                        </div>
+                        <div className="form-input">
+                            <Input type="text" name="name" onChange={handleChange} value={newNpc.name} />
+                        </div>
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="name">Address</Label>
+                        <div className="form-input">
+                            <Input type="text" name="name" onChange={handleChange} value={newNpc.name} />
+                        </div>
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="name">Likes</Label>
+                        <div className="form-input">
+                            <Input type="text" name="name" onChange={handleChange} value={newNpc.name} />
+                        </div>
+                    </FormGroup>
+                    <div className="button">
+                        <Button color="primary" size="lg" onClick={handleSubmit} name="submit">
+                            <div className="form-label-button">
+                                Submit Npc
+                            </div>
+                        </Button>
                     </div>
-                    <div className="form-input">
-                    <Input  type="text" name="name" onChange={handleChange} value={newNpc.name} />
-                    </div>
-                </FormGroup>
-                <FormGroup>
-                    <Label for="name">Address</Label>
-                    <div className="form-input">
-                    <Input type="text" name="name" onChange={handleChange} value={newNpc.name} />
-                    </div>
-                </FormGroup>
-                <FormGroup>
-                    <Label for="name">Likes</Label>
-                    <div className="form-input">
-                    <Input type="text" name="name" onChange={handleChange} value={newNpc.name} />
-                    </div>
-                </FormGroup>
-                <div className="button">
-                <Button onClick={handleSubmit} name="submit">
-                    <div className="button-text" color="red">
-                    Submit Npc
-                    </div>
-                </Button>
-                </div>
-            </Form>
-        </div>
+                </Form>
+            </div>
         </>
     )
 }

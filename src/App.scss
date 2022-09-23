@@ -1,8 +1,35 @@
+/* GlOBAL */
+
+html {
+  max-width: 960px;
+  min-width: 462px;
+  margin: auto;
+}
+
+p {
+  font-family: "stardew";
+  font-size: 20px;
+}
+
 /* HEADER */
 
 .header-tab {
   display: flex;
   justify-content: center;
+}
+
+#header-index-text,
+#header-home-text,
+#header-new-text {
+  color: white;
+  font-family: stardew;
+  font-size: 40px;
+}
+
+#audio-player {
+  position: relative;
+
+  opacity: 0.4;
 }
 
 
@@ -23,14 +50,14 @@
   justify-content: space-around;
 }
 
-#show-profile{
+#show-profile {
   height: 40%;
   width: 40%;
   display: flex;
   justify-content: space-around;
 }
 
-#npc-name{
+#npc-name {
   text-align: center;
 }
 
@@ -38,26 +65,24 @@
 /* FONTS */
 
 @font-face {
-  font-family: "stardewCAPS";   /*Can be any text*/
+  font-family: "stardewCAPS";
+  /*Can be any text*/
   src: local("StardewValley"),
     url("./fonts/StardewValleyALLCAPS.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "stardew";   /*Can be any text*/
+  font-family: "stardew";
+  /*Can be any text*/
   src: local("StardewValley"),
     url("./fonts/StardewValley.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "stardewRegular";   /*Can be any text*/
+  font-family: "stardewRegular";
+  /*Can be any text*/
   src: local("StardewValley"),
     url("./fonts/StardewValleyRegular.ttf") format("truetype");
-}
-
-p {
-  font-family: "stardew";
-  font-size: 20px;
 }
 
 
@@ -66,68 +91,26 @@ p {
 .background-img {
   text-align: center;
   background-image: url("https://stardewvalleywiki.com/mediawiki/extensions/StardewValley/images/stardewbackground.png");
-  // height:'100vh';
-  // margin: auto 0;
   background-size: cover;
   width: 100%;
   height: auto;
-  // object-fit: cover;
-
   background-repeat: no-repeat;
-};
-
-
-/* FOOTER */
-
-.footer {
-  padding-top: 318px;
 }
 
-
-/* NEW FORM */
-
-.form-background-box {
- background-color: rgb(234, 238, 239);
- margin: 110px;
- padding-bottom: 40px;
- padding-top: 30px;
- opacity: 0.9;
- border-radius: 5%;
-//  max-width: 40%;
-//  display: flex;
-//  justify-content: center;
-}
-
-.form-input {
-  width: 70%;
-  padding: 1%;
-  display: block;
-  position: relative;
-  margin: 0 auto;
-  opacity: 1;
-}
-
-.form-label {
-  color: black;
-  opacity: 1 !important;  
-}
-
-.button {
-  
-}
-
-// .button-text {
-//  background-color: blue
-// }
-
-
-/* HOME */
+/* HOMEPAGE */
 
 .home-welcome {
   font-family: stardew;
   font-size: 3rem;
   color: black;
   padding-top: 30px;
+}
+
+.button-index-see-more {
+  color: white;
+  opacity: 1 !important;
+  font-family: stardew;
+  font-size: 20px;
 }
 
 #home-subtext {
@@ -137,10 +120,58 @@ p {
 }
 
 
+/* FOOTER */
+
+.footer {
+  padding-top: 218px;
+  color: white;
+}
+
+/* EDIT PAGE */
+
+.edit-title {
+  color: white;
+  font-family: stardew;
+  font-size: 40px;
+}
+
+/* NEW FORM */
+
+.form-background-box {
+  background-color: rgb(234, 238, 239);
+  margin: 15%;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  opacity: 0.9;
+  border-radius: 5%;
+}
+
+.form-input {
+  width: 75%;
+  padding: 1%;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  opacity: 1;
+}
+
+.form-label {
+  color: black;
+  opacity: 1 !important;
+  font-family: stardew;
+  font-size: 30px;
+}
+
+.form-label-button {
+  color: white;
+  opacity: 1 !important;
+  font-family: stardew;
+  font-size: 30px;
+}
+
+
 /* AUDIO PLAYER */
 
 #audio-player {
   padding-top: 4rem;
 }
-
-
