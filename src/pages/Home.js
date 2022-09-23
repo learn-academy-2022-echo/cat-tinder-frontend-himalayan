@@ -1,11 +1,15 @@
-import React from "react"
+import React from "react";
 
 const Home = () => {
-    return (
-        <>
-            <p>Home</p>
-            <p>Welcome Pelican Town, Lets find the love of your life!</p>
-        </>
-    )
-}
-export default Home
+  return (
+    <>
+      <h1> Welcome to </h1>
+      <img
+        alt=""
+        src="https://stardewvalleywiki.com/mediawiki/images/6/68/Main_Logo.png"
+      />
+      <p>Come learn more about your neighbors!</p>
+    </>
+  );
+};
+export default Home;

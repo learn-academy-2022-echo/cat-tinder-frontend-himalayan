@@ -1,0 +1,67 @@
+.card {
+  margin: 2rem 0;
+}
+
+.npcs-index-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#show-profile{
+  height: 40%;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#npc-name{
+  text-align: center;
+}
+
+.background-img {
+  text-align: center;
+  background-image: url("https://stardewvalleywiki.com/mediawiki/extensions/StardewValley/images/stardewbackground.png");
+  height:'100vh';
+  margin: auto 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+};
+
+.footer {
+  padding-top: 318px;
+}
+
+.form-background-box {
+ background-color: rgb(234, 238, 239);
+ margin: 110px;
+ padding-bottom: 40px;
+ padding-top: 30px;
+ opacity: 0.7;
+ border-radius: 5%;
+}
+
+.form-input {
+  width: 70%;
+  padding: 1%;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  opacity: 1;
+}
+
+.form-label {
+  color: black;
+  opacity: 1;
+}
+
+.button {
+  
+}
+
+// .button-text {
+//  background-color: blue
+// }
+
+
+
