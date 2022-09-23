@@ -18,6 +18,7 @@ import PlaySound from "./components/PlaySound";
 
 
 const App = () => {
+
   // eslint-disable-next-line
   const [npcs, setNpcs] = useState(mockSV);
 
@@ -50,6 +51,7 @@ const App = () => {
         <Footer />
         
       </div>
+
     </>
   );
 };

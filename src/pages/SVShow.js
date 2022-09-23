@@ -33,7 +33,11 @@ const SVShow = ({ npcs }) => {
             Likes: {npcObj.likes}
           </CardText>
         </CardBody>
+
         <Button color="primary" size="lg"><NavLink to={`/svedit/${npcObj.id}`} className="nav-link"><div className="button-index-see-more">Edit</div></NavLink></Button>
+
+        
+
       </Card>
     </div>
   )

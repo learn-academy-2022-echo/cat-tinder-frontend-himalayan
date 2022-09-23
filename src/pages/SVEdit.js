@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Form, FormGroup, Input, Label, Button } from 'reactstrap'
 import { useParams, useNavigate } from 'react-router-dom'
 
+
 const SVEdit = ({ npcs, updateNpc }) => {
 
     const navigate = useNavigate()
@@ -64,6 +65,7 @@ const SVEdit = ({ npcs, updateNpc }) => {
                     </Button>
                 </Form>
             </div>
+
         </div>
     )
 }
