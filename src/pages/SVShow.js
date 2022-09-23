@@ -11,7 +11,7 @@ const SVShow = ({ npcs }) => {
     <div id="show-profile">
       <Card className="my-2">
         <img
-          alt="Card image cap"
+          alt=""
           src={npcObj.image}
         />
         <CardBody>

@@ -17,7 +17,7 @@ const SVIndex = () => {
                     key={index}
                   >
                     <img
-                      alt="image of a npc from Stardew Valley"
+                      alt=""
                       src={npcs.image}
                     />
                     <CardBody>
@@ -29,9 +29,6 @@ const SVIndex = () => {
 
                 )
             })}
-        <>
-            <h1>This is Index Page</h1>
-        </>
         </main>
     )
 }
