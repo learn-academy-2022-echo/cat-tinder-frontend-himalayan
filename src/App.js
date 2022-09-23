@@ -17,24 +17,30 @@ import './App.css'
 
 const App = () => {
   const [npcs, setNpcs] = useState(mockSV)
+  
   const createNpc = (npc) => {
-    console.log(npc)
+    // console.log(npc)
+  }
+
+  const updateNpc = (npc, id) => {
+    // console.log("npc:", npc)
+    // console.log("id:", id)
   }
 
   return (
     <>
       <div style={{ backgroundImage: "url(public/SVBackground.jpeg)" }}></div>
       <Header />
-      <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/svindex" element={<SVIndex npcs = {npcs}/>} />
         <Route path="/svshow/:id" element={<SVShow npcs= { npcs } />} />
         <Route path="/svnew" element={<SVNew createNpc={createNpc} />} />
-        <Route path="/svedit" element={<SVEdit />} />
+        <Route 
+          path="/svedit/:id" 
+          element={<SVEdit  npcs={npcs} updateNpc={updateNpc} />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
-      </BrowserRouter>
       <Footer />
 
 
