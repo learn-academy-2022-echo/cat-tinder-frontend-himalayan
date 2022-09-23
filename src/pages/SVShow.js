@@ -15,11 +15,14 @@ const SVShow = ({ npcs }) => {
           src={npcObj.image}
         />
         <CardBody>
-          <CardTitle tag="h5" id="npc-name">
+          <CardTitle className="npc-name" id="npc-name">
             { npcObj.name }
           </CardTitle>
           <CardText>
-            Favorite thing: {npcObj.likes}
+            Lives at: {npcObj.address}
+          </CardText>
+          <CardText>
+            Likes: {npcObj.likes}
           </CardText>
         </CardBody>
         <Button><NavLink to={`/svedit/${npcObj.id}`} className="nav-link">Edit</NavLink></Button>
