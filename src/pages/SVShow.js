@@ -9,20 +9,35 @@ const SVShow = ({ npcs }) => {
   const npcObj = npcs?.find(npc => npc.id === +id)
   return (
     <div id="show-profile">
-      <Card className="my-2">
+      <Card
+        className="card"
+        color="dark"
+        outline
+        style={{
+          width: '14rem'
+        }}
+      >
+
         <img
-          alt="Card image cap"
+          alt=""
           src={npcObj.image}
         />
         <CardBody>
-          <CardTitle tag="h5" id="npc-name">
-            { npcObj.name }
+          <CardTitle className="npc-name">
+            {npcObj.name}
           </CardTitle>
           <CardText>
-            Favorite thing: {npcObj.likes}
+            Lives at: {npcObj.address}
+          </CardText>
+          <CardText>
+            Likes: {npcObj.likes}
           </CardText>
         </CardBody>
-        <Button><NavLink to={`/svedit/${npcObj.id}`} className="nav-link">Edit</NavLink></Button>
+
+        <Button color="primary" size="lg"><NavLink to={`/svedit/${npcObj.id}`} className="nav-link"><div className="button-index-see-more">Edit</div></NavLink></Button>
+
+        
+
       </Card>
     </div>
   )

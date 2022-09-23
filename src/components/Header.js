@@ -1,35 +1,31 @@
-import React from "react"
-import { Nav, NavItem, NavLink } from "reactstrap"
+import React from "react";
+import { Nav, NavItem, NavLink } from "reactstrap";
+import { Link } from "react-router-dom"
 
 
 const Header = () => {
-    return (
-        <>
-            <Nav tabs>
-                <NavItem>
-                    <NavLink active href="/">
-                        Home
-                    </NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink href="/SVIndex">
-                        Index
-                    </NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink href="/SVNew">
-                        New
-                    </NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink href="/SVEdit">
-                        Edit
-                    </NavLink>
-                </NavItem>
-                         
-            </Nav>
-        </>
-    )
-}
+  return (
+    <>
+      <Nav fill>
+        <NavItem>
+          **<NavLink tag={Link} to="/" id="header-home-text">
+            Home
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          **<NavLink tag={Link} to="/SVIndex" id="header-index-text">Villagers</NavLink>
+        </NavItem>
+        <NavItem>
+          **<NavLink tag={Link} to="/SVNew" id="header-new-text">Add New</NavLink>
+        </NavItem>
 
-export default Header
+      </Nav>
+
+
+
+
+    </>
+  );
+};
+
+export default Header;

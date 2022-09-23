@@ -5,34 +5,33 @@ import { NavLink } from "react-router-dom"
 
 
 const SVIndex = () => {
-    return (
- 
-        <main className="npcs-index-cards">
-            {npcs?.map((npcs, index) => {
-                return (
-                    <Card
-                    style={{
-                      width: '14rem'
-                    }}
-                    key={index}
-                  >
-                    <img
-                      alt="image of a npc from Stardew Valley"
-                      src={npcs.image}
-                    />
-                    <CardBody>
-                      <CardTitle tag="h5">{npcs.name}</CardTitle>
-                      <CardText>Favorite thing: {npcs.likes}</CardText>
-                      <Button><NavLink to={`/svshow/${npcs.id}`} className="nav-link">See More</NavLink></Button>
-                    </CardBody>
-                  </Card>
+  return (
 
-                )
-            })}
-        <>
-            <h1>This is Index Page</h1>
-        </>
-        </main>
-    )
+    <main className="npcs-index-cards">
+      {npcs?.map((npcs, index) => {
+        return (
+          <Card
+            color="dark"
+            outline
+            style={{
+              width: '14rem'
+            }}
+            key={index}
+          >
+            <img
+              alt=""
+              src={npcs.image}
+            />
+            <CardBody>
+              <div className="npc-name"><CardTitle>{npcs.name}</CardTitle></div>
+              <CardText>Likes: {npcs.likes}</CardText>
+              <Button color="primary" size="lg"><NavLink to={`/svshow/${npcs.id}`}><div className="button-index-see-more">See more</div></NavLink></Button>
+            </CardBody>
+          </Card>
+
+        )
+      })}
+    </main>
+  )
 }
 export default SVIndex
