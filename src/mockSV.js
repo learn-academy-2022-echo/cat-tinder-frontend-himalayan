@@ -47,7 +47,7 @@ const npcs = [
         id: 7,
         name: "Alex",
         address: "1 River Road",
-        likes: "Complete Breakfast",
+        likes: "Breakfast",
         image: "https://stardewvalleywiki.com/mediawiki/images/0/04/Alex.png"
     },
     {

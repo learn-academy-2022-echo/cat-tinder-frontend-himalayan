@@ -10,18 +10,23 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import { Routes, Route } from "react-router-dom";
 import "./App.scss";
+import "./fonts/StardewValley.ttf";
+import "./fonts/StardewValleyALLCAPS.ttf";
+import "./fonts/StardewValleyRegular.ttf";
+import PlaySound from "./components/PlaySound";
+
+
 
 const App = () => {
   // eslint-disable-next-line
   const [npcs, setNpcs] = useState(mockSV);
 
   const createNpc = (npc) => {
-    // console.log(npc)
+  
   };
 
   const updateNpc = (npc, id) => {
-    // console.log("npc:", npc)
-    // console.log("id:", id)
+    
   };
 
   return (
@@ -39,6 +44,9 @@ const App = () => {
           />
           <Route path="/*" element={<NotFound />} />
         </Routes>
+        <div id="audio-player">
+          <PlaySound/>
+        </div>
         <Footer />
         
       </div>

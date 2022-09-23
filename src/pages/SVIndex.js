@@ -21,8 +21,8 @@ const SVIndex = () => {
                       src={npcs.image}
                     />
                     <CardBody>
-                      <CardTitle tag="h5">{npcs.name}</CardTitle>
-                      <CardText>Favorite thing: {npcs.likes}</CardText>
+                      <div className="npc-name"><CardTitle>{npcs.name}</CardTitle></div>
+                      <CardText>Likes: {npcs.likes}</CardText>
                       <Button><NavLink to={`/svshow/${npcs.id}`} className="nav-link">See More</NavLink></Button>
                     </CardBody>
                   </Card>
