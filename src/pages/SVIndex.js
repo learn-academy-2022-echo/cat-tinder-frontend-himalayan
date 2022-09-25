@@ -1,10 +1,9 @@
 import React from "react"
-import npcs from "../mockSV"
 import { Card, CardBody, CardTitle, CardText, Button } from 'reactstrap'
 import { NavLink } from "react-router-dom"
 
 
-const SVIndex = () => {
+const SVIndex = ({npcs, readNpc}) => {
   return (
 
     <main className="npcs-index-cards">
