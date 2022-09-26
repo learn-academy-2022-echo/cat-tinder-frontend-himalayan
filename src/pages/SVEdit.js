@@ -21,7 +21,7 @@ const SVEdit = ({ npcs, updateNpc }) => {
     }
     const handleSubmit = () => {
         updateNpc(editNpc, currentNpc.id)
-        alert("Entry has been updated, please refresh the page.")
+        alert("Npc profile has been updated!")
         navigate('/svindex')
     }
 
@@ -63,7 +63,6 @@ const SVEdit = ({ npcs, updateNpc }) => {
                             Submit
                         </div>
                     </Button>
-                    
                 </Form>
             </div>
 

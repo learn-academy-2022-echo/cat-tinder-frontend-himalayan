@@ -32,21 +32,15 @@ const SVNew = ({ createNpc }) => {
                         </div>
                     </FormGroup>
                     <FormGroup>
-                        <Label for="address">Address</Label>
+                        <Label for="name">Address</Label>
                         <div className="form-input">
-                            <Input type="text" name="address" onChange={handleChange} value={newNpc.address} />
+                            <Input type="text" name="name" onChange={handleChange} value={newNpc.name} />
                         </div>
                     </FormGroup>
                     <FormGroup>
-                        <Label for="likes">Likes</Label>
+                        <Label for="name">Likes</Label>
                         <div className="form-input">
-                            <Input type="text" name="likes" onChange={handleChange} value={newNpc.likes} />
-                        </div>
-                    </FormGroup>
-                    <FormGroup>
-                        <Label for="image">Image URL</Label>
-                        <div className="form-input">
-                            <Input type="text" name="image" onChange={handleChange} value={newNpc.image} />
+                            <Input type="text" name="name" onChange={handleChange} value={newNpc.name} />
                         </div>
                     </FormGroup>
                     <div className="button">

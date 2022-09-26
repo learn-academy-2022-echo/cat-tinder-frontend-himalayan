@@ -36,7 +36,6 @@ const SVShow = ({ npcs }) => {
 
         <Button color="primary" size="lg"><NavLink to={`/svedit/${npcObj.id}`} className="nav-link"><div className="button-index-see-more">Edit</div></NavLink></Button>
 
-        <Button color="danger" size="lg"><NavLink to={"/svindex/"} className="nav-link"><div className="button-index-delete">Delete</div></NavLink></Button>
         
 
       </Card>

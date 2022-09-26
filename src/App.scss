@@ -11,7 +11,6 @@ p {
   font-size: 20px;
 }
 
-
 /* HEADER */
 
 .header-tab {
@@ -107,23 +106,11 @@ p {
   padding-top: 30px;
 }
 
-.home-image {
-  padding-top: 70px;
-}
-
-.button-index-see-more, .button-index-delete {
+.button-index-see-more {
   color: white;
   opacity: 1 !important;
   font-family: stardew;
   font-size: 20px;
-}
-
-.btn  {
-  color: white;
-  opacity: 1 !important;
-  font-family: stardew;
-  font-size: 20px;
-  margin: 5px 5px;
 }
 
 #home-subtext {
@@ -132,47 +119,11 @@ p {
   color: black;
 }
 
-/* NOT FOUND */
-
-.sorry-not-found {
-  font-family: stardew;
-  color: white;
-  font-size: 50px;
-  padding-top: 70px;
-}
-
-.not-found-home-link {
-  padding-top: 100px;
-  font-size: 30px;
- }
-
-.not-found-home-link:link {
-  color: red;
-}
-
-
-/* mouse over link */
-.not-found-home-link:hover {
-  color: purple;
-}
-
-/* selected link */
-.not-found-home-link:active {
-  color: blue;
-}
-
-.not-found-a-tag{
-  text-decoration: none;
-}
-
-.not-found-a-tag:visited{
-  color: green;
-}
 
 /* FOOTER */
 
 .footer {
-  padding-top: 220px;
+  padding-top: 218px;
   color: white;
 }
 
