@@ -3,7 +3,8 @@ import React from "react";
 const Home = () => {
   return (
     <>
-      <img
+      <img 
+        className="home-image"
         alt=""
         src="https://stardewvalleywiki.com/mediawiki/images/6/68/Main_Logo.png"
       />
