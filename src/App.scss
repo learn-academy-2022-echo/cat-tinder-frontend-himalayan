@@ -66,24 +66,10 @@ p {
 /* FONTS */
 
 @font-face {
-  font-family: "stardewCAPS";
-  /*Can be any text*/
-  src: local("StardewValley"),
-    url("./fonts/StardewValleyALLCAPS.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "stardew";
   /*Can be any text*/
   src: local("StardewValley"),
     url("./fonts/StardewValley.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "stardewRegular";
-  /*Can be any text*/
-  src: local("StardewValley"),
-    url("./fonts/StardewValleyRegular.ttf") format("truetype");
 }
 
 

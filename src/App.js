@@ -10,8 +10,6 @@ import NotFound from "./pages/NotFound";
 import { Routes, Route } from "react-router-dom";
 import "./App.scss";
 import "./fonts/StardewValley.ttf";
-import "./fonts/StardewValleyALLCAPS.ttf";
-import "./fonts/StardewValleyRegular.ttf";
 import PlaySound from "./components/PlaySound";
 
 function App() {
@@ -67,6 +65,7 @@ function App() {
       .then((response) => response.json())
       .then((payload) => this.readNpc())
       .catch((errors) => console.log("delete errors:", errors))
+      .finally(() => readNpc())
   }
 
   return (
@@ -75,20 +74,19 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/svindex" element={<SVIndex npcs={npcs} />} />
+          <Route path="/svindex" 
+            element={<SVIndex npcs={npcs} />} />
           <Route 
           path="/svshow/:id" 
-          render={(props) => {
-            let id = props.match.params.id
-            let npc = this.state.npcs.find((npc) => npc.id === +id)
-            return <SVShow npc={npc} deleteNpc={this.deleteNpc} />
-          }}
-          element={<SVShow npcs={npcs} />} />
+          element={<SVShow 
+            npcs={npcs} 
+            deleteNpc={deleteNpc} />} />
           <Route path="/svnew" element={<SVNew createNpc={createNpc} />} />
-          {/* delete method not working */}
           <Route
             path="/svedit/:id"
-            element={<SVEdit npcs={npcs} updateNpc={updateNpc} deleteNpc ={deleteNpc} />}
+            element={<SVEdit 
+              npcs={npcs} 
+              updateNpc={updateNpc} />}
           />
           <Route path="/*" element={<NotFound />} />
         </Routes>
