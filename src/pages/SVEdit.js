@@ -25,6 +25,8 @@ const SVEdit = ({ npcs, updateNpc }) => {
         navigate('/svindex')
     }
 
+
+
     return (
         <div className='container'>
             <div className="edit-title">
